@@ -1,0 +1,39 @@
+.asset-info-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: 0;
+  background: #13141F;
+  border-radius: 8px;
+  height: 236px;
+  width: 100%;
+  margin-left: 12px;
+}
+
+.asset-column {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  gap: 16px;
+  background: #24253C;
+}
+
+.divider {
+  width: 1px;
+  background-color: white;
+  opacity: 0.15;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+  padding: 0px 12px;
+  font-family: BT Beau Sans;
+  font-size: 14px;
+  color: rgba(153, 161, 183, 1);
+}
+
+.white {
+    color: rgba(255, 255, 255, 1);
+}
