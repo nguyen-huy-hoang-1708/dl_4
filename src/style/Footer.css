@@ -1,0 +1,90 @@
+.footer {
+    width: 1920px;
+    height: 40px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #13141F;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-label {
+  opacity: 0.8;
+  font-family: BT Beau Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #78829D;
+}
+
+.status-icon {
+  font-size: 13px;
+  color: #78829D;
+}
+
+.status-value {
+  color: #17C653;
+  font-family: BT Beau Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.footer-right {
+  color:#F6B100;
+  font-weight: 500;
+  font-family: Lexend;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .status-label,
+  .status-value,
+  .footer-right {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+  }
+
+  .User {
+    width: 20px;
+    height: auto;
+  }
+}

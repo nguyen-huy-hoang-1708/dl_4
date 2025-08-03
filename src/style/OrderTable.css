@@ -1,0 +1,118 @@
+.position-table {
+  display: grid;
+  background-color: #13141F;
+  color: white;
+  font-size: 13px;
+  overflow: hidden;
+  width: 1896px;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.table-row-one {
+  display: flex;
+  padding: 0px 0;
+  align-items: center;
+    background-color: #13141F;
+    width: 100%;
+    gap: 55.08px;
+    margin-bottom: 8px;
+    height: 16px;
+    font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(120, 130, 157, 1);
+}
+
+.table-row-two {
+    display: flex;
+    padding: 0px 0;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #13141F;
+    width: 100%;
+    gap: 55.08px;
+    height: 32px;
+font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #fff;
+/*justify-content: right;*/
+}
+
+.cell-icon {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+}
+
+.Nocheckbox {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.cella {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 64px;
+    height: 100%;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  padding: 0 0px;
+  width: 80px;
+  height: 100%;
+
+}
+
+.cellt {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 4px;
+
+}
+
+.cells {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 64px;
+    height: 100%;
+    width: 160px;
+    height: 100%;
+}
+
+.green {
+  color: rgba(23, 198, 83, 1);
+}
+
+.red {
+  color: rgba(248, 40, 90, 1);
+}
+
+.padding {
+    width: 100%;
+    height: 209px;
+}
+
+.table-row-two:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.05); 
+}
