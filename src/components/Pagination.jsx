@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Pagination.css';
+import '../style/Pagination.scss';
 import Option from '../assets/Option.svg';
 
 export default function Pagination() {

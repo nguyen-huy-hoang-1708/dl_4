@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Tabs.css';
+import '../style/Tabs.scss';
 
 export default function Tabs() {
   return (

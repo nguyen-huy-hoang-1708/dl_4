@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/AssetInfo.css';
+import '../style/AssetInfo.scss';
 
 export default function AssetInfo() {
   return (

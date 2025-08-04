@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/TopNavbar.css';
+import '../style/TopNavbar.scss';
 import logo from '../assets/Logo.svg';
 import Flag from '../assets/Flag.svg';
 import Option from '../assets/Option.svg';

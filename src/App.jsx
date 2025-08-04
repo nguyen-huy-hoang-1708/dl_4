@@ -6,7 +6,7 @@ import AssetInfo from './components/AssetInfo.jsx';
 import OrderTable from './components/OrderTable.jsx';
 import Pagination from './components/Pagination.jsx';
 import Footer from './components/Footer.jsx';
-import './index.css';
+import './index.scss';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/SearchBar.css';
+import '../style/SearchBar.scss';
 import Option from '../assets/Option.svg';
 
 export default function SearchForm() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/OrderTable.css';
+import '../style/OrderTable.scss';
 import Nocheckbox from '../assets/Nocheckbox.svg';
 import Kinhlup from '../assets/Kinhlup.svg';
 
