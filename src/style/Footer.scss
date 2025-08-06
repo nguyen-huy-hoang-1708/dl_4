@@ -27,6 +27,7 @@
   letter-spacing: 0%;
   text-align: center;
   color: #78829D;
+  margin-left: 12px;
 }
 
 .status-icon {
@@ -55,23 +56,23 @@
   line-height: 16px;
   letter-spacing: 0%;
   text-align: center;
+  margin-right: 12px;
 }
 
 
 
 /*RESPONSIVE*/
-@media (max-width: 640px) {
+@media (max-width: 1600px) {
   .footer {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 8px;
-    padding: 12px;
-    text-align: left;
+    width: 100%;
+    height: auto;
   }
 
   .footer-left {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
     gap: 4px;
   }
 
@@ -80,7 +81,33 @@
   .footer-right {
     font-size: 12px;
     line-height: 16px;
-    text-align: left;
+  }
+
+  .User {
+    width: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .status-label,
+  .status-value,
+  .footer-right {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .User {

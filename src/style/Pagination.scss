@@ -51,7 +51,6 @@ color:rgba(75, 86, 117, 1);
   gap: 8px;
   margin-right: 12px;
   justify-content: center;
-  
 }
 
 .pagination-btn {
@@ -69,5 +68,16 @@ color:rgba(75, 86, 117, 1);
 
 .number-child {
    color: #fff;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1024px) {
+  .pagination-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
 }
 

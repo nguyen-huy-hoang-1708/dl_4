@@ -78,3 +78,23 @@ line-height: 20px;
 letter-spacing: 0%;
 color: rgba(255, 255, 255, 1);
 }
+
+/*Responsive*/
+@media (max-width: 1679px) {
+  .search-form {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-form {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+  }
+}
