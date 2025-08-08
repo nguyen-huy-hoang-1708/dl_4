@@ -1,0 +1,201 @@
+.positionTable {
+  display: grid;
+  background-color: #13141F;
+  color: white;
+  font-size: 13px;
+  overflow: hidden;
+  width: 1872px;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-left: 12px;
+}
+
+.tableRowOne {
+  display: flex;
+  padding: 0px 0;
+  align-items: center;
+    background-color: #13141F;
+    width: 100%;
+    gap: 55.08px;
+    margin-bottom: 8px;
+    height: 16px;
+    font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(120, 130, 157, 1);
+}
+
+.tableRowTwo {
+    display: flex;
+    padding: 0px 0;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #13141F;
+    width: 100%;
+    gap: 55.08px;
+    height: 32px;
+font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #fff;
+/*justify-content: right;*/
+}
+
+.cellIcon {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+}
+
+.cellIcon {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.cella {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 64px;
+    height: 100%;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  padding: 0 0px;
+  width: 80px;
+  height: 100%;
+
+}
+
+.cellt {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 4px;
+
+}
+
+.cells {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 64px;
+    height: 100%;
+    width: 148px;
+    height: 100%;
+}
+
+.green {
+  color: rgba(23, 198, 83, 1);
+}
+
+.red {
+  color: rgba(248, 40, 90, 1);
+}
+
+.padding {
+    width: 100%;
+    height: 209px;
+}
+
+.tableRowTwo:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.05); 
+}
+
+
+/*Responsive*/
+@media (max-width: 1679px) {
+  .positionTable {
+    height: 1000px !important;
+    width: 100%;
+    grid-template-columns: minmax(120px, 1fr) repeat(auto-fit, minmax(120px, 1fr));
+
+  }
+  
+
+  .tableRowOne,
+  .tableRowTwo {
+    height: 30px;
+    flex-direction: row !important;
+        justify-content: space-between;
+    gap: 24px;
+  }
+
+  .cell,
+  .cella,
+  .cellt,
+  .cells {
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+}
+
+.Kinhlup {
+  display: none;
+}
+
+.tableRowTwo:nth-of-type() {
+  background-color: rgba(255, 255, 255, 0.05); 
+}
+
+
+@media (max-width: 768px) {
+  .positionTable {
+    width: 100% !important;
+    height: 2000px !important;
+    padding: 0 2px;
+  }
+
+  .tableRowOne,
+  .tableRowTwo {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cell,
+  .cella,
+  .cellt,
+  .cells {
+    justify-content: space-between;
+  }
+}
+
+.Kinhlup {
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .cell,
+  .cella,
+  .cellt,
+  .cells {
+    font-size: 11px;
+  }
+
+  .tableRowOne,
+  .tableRowTwo {
+    gap: 6px;
+  }
+}
+
+.Kinhlup {
+  display: none;
+}
+

@@ -1,4 +1,4 @@
-.top-navbar {
+.topNavbar {
   display: flex;
   justify-content: space-between;
   background: #13141F;
@@ -15,7 +15,7 @@
   height: 44px;
 }
 
-.logo-container {
+.logoContainer {
   display: flex;
   height: 100%;
   width: 53px;
@@ -30,7 +30,7 @@
   height: 100%;
 }
 
-.menu-tabss {
+.menuTabss {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -115,7 +115,7 @@
   margin-right: 8px;
 }
 
-.navbar-left {
+.navbarLeft {
   display: flex;
   align-items: center;
   flex: 1;
@@ -123,7 +123,7 @@
   height: 100%;
 }
 
-.account-info {
+.accountInfo {
   height: 100%;
   display: flex;
   align-items: center;
@@ -134,7 +134,7 @@
 }
 
 .gradients {
-background: linear-gradient(to right, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
+background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
   color: #9580FF;
   white-space: nowrap; 
   height: 100%;
@@ -156,7 +156,7 @@ background: linear-gradient(to right, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1)
   text-align: center;
 }
 
-.Option-icon {
+.OptionIcon {
   height: 12px;
   width: 12px;
 }
@@ -165,20 +165,20 @@ background: linear-gradient(to right, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1)
 /*RESPONSIVE*/
 @media (max-width: 1600px) {
 
-  .top-navbar {
+  .topNavbar {
     width: 100%;
     align-items: flex-start;
     height: auto;
   }
-  .navbar-left,
-  .account-info {
+  .navbarLeft,
+  .accountInfo {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
   }
 
-  .menu-tabss {
+  .menuTabss {
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 12px;
@@ -201,27 +201,27 @@ background: linear-gradient(to right, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1)
     object-fit: contain;
     margin-bottom: 8px;
   }
-  .menu-tabss {
+  .menuTabss {
     display: none;
   }
 }
 
 @media (max-width: 500px) {
-  .top-navbar {
+  .topNavbar {
     width: 100%;
     flex-direction: row;
     align-items: flex-start;
     height: auto;
   }
 
-  .navbar-left,
-  .account-info {
+  .navbarLeft,
+  .accountInfo {
     width: 10%;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .menu-tabss {
+  .menuTabss {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  
     gap: 12px;
@@ -241,7 +241,7 @@ background: linear-gradient(to right, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1)
     align-items: center;
     text-align: center;
   }
-  .menu-tabss {
+  .menuTabss {
     display: none;
   }
 }

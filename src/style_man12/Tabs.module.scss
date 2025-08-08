@@ -1,0 +1,49 @@
+.tabs {
+    display: flex;
+    width: 1896px;
+    height: 44px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+    margin-left: 12px;
+}
+
+.tabsNameOne {
+    display: flex;
+    width: 162px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;  
+}
+
+.nameOne {
+font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+}
+
+.tabsNameTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 100%;
+    background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
+    border-bottom: 2px solid rgba(97, 66, 254, 1);
+}
+
+.nameTwo {
+font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(149, 128, 255, 1);
+
+}
+

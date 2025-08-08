@@ -11,13 +11,13 @@
   font-size: 14px;
 }
 
-.footer-left {
+.footerLeft {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.status-label {
+.statusLabel {
   opacity: 0.8;
   font-family: BT Beau Sans;
   font-weight: 400;
@@ -30,12 +30,12 @@
   margin-left: 12px;
 }
 
-.status-icon {
+.statusIcon {
   font-size: 13px;
   color: #78829D;
 }
 
-.status-value {
+.statusValue {
   color: #17C653;
   font-family: BT Beau Sans;
   font-weight: 500;
@@ -46,7 +46,7 @@
   text-align: center;
 }
 
-.footer-right {
+.footerRight {
   color:#F6B100;
   font-weight: 500;
   font-family: Lexend;
@@ -71,14 +71,14 @@
     height: auto;
   }
 
-  .footer-left {
+  .footerLeft {
     flex-direction: row;
     gap: 4px;
   }
 
-  .status-label,
-  .status-value,
-  .footer-right {
+  .statusLabel,
+  .statusValue,
+  .footerRight {
     font-size: 12px;
     line-height: 16px;
   }
@@ -98,14 +98,14 @@
     height: auto;
   }
 
-  .footer-left {
+  .footerLeft {
     flex-direction: row;
     gap: 4px;
   }
 
-  .status-label,
-  .status-value,
-  .footer-right {
+  .statusLabel,
+  .statusValue,
+  .footerRight {
     font-size: 12px;
     line-height: 16px;
   }

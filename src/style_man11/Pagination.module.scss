@@ -1,4 +1,4 @@
-.pagination-container {
+.paginationContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +8,7 @@
   font-size: 14px;
 }
 
-.pagination-left {
+.paginationLeft {
   display: flex;
   align-items: center;
 }
@@ -35,7 +35,7 @@
     height: 12px;
 }
 
-.number-right {
+.numberRight {
     font-family: BT Beau Sans;
 font-weight: 500;
 font-style: Medium;
@@ -45,7 +45,7 @@ letter-spacing: 0%;
 color:rgba(75, 86, 117, 1);
 }
 
-.pagination-right {
+.paginationRight {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -53,7 +53,7 @@ color:rgba(75, 86, 117, 1);
   justify-content: center;
 }
 
-.pagination-btn {
+.paginationBtn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,14 +66,14 @@ color:rgba(75, 86, 117, 1);
   cursor: pointer;
 }
 
-.number-child {
+.numberChild {
    color: #fff;
 }
 
 
 /*RESPONSIVE*/
 @media (max-width: 1600px) {
-  .pagination-container {
+  .paginationContainer {
     display: flex;
     flex-direction: row;
     width: 100%;

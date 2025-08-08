@@ -1,0 +1,83 @@
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 49px;
+  width: 1896px;
+  background-color: #13141F; 
+  font-size: 14px;
+}
+
+.paginationLeft {
+  display: flex;
+  align-items: center;
+}
+
+.number{
+  background-color: #1f2233;
+  color: #fff;
+  border: 1px solid #2c2f40;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 12px;
+  display: flex;
+    width: 48px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.op {
+    width: 12px;
+    height: 12px;
+}
+
+.numberRight {
+    font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0%;
+color:rgba(75, 86, 117, 1);
+}
+
+.paginationRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 12px;
+  justify-content: center;
+}
+
+.paginationBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  color: #80889e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.numberChild {
+   color: #fff;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1600px) {
+  .paginationContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+}
+

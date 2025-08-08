@@ -6,17 +6,17 @@
     margin-left: 12px;
 }
 
-.tabs-name-one {
+.tabsNameOne {
     display: flex;
     width: 162px;
     height: 100%;
-    background: linear-gradient(to right, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
-    border-bottom: 2px solid rgba(97, 66, 254, 1);
     align-items: center;
     justify-content: center;  
+    background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
+    border-bottom: 2px solid rgba(97, 66, 254, 1);
 }
 
-.name-one {
+.nameOne {
 font-family: BT Beau Sans;
 font-weight: 500;
 font-style: Medium;
@@ -27,7 +27,7 @@ text-align: center;
 color: rgba(149, 128, 255, 1);
 }
 
-.tabs-name-two {
+.tabsNameTwo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@ color: rgba(149, 128, 255, 1);
     height: 100%;
 }
 
-.name-two {
+.nameTwo {
 font-family: BT Beau Sans;
 font-weight: 500;
 font-style: Medium;

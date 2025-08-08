@@ -1,4 +1,4 @@
-.position-table {
+.positionTable {
   display: grid;
   background-color: #13141F;
   color: white;
@@ -8,15 +8,16 @@
   height: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   margin-left: 12px;
+  margin-top: -24px;
 }
 
-.table-row-one {
+.tableRowOne {
   display: flex;
   padding: 0px 0;
   align-items: center;
     background-color: #13141F;
     width: 100%;
-    gap: 55.08px;
+    gap: 49.85px;
     margin-bottom: 8px;
     height: 16px;
     font-family: BT Beau Sans;
@@ -29,14 +30,14 @@ vertical-align: middle;
 color: rgba(120, 130, 157, 1);
 }
 
-.table-row-two {
+.tableRowTwo {
     display: flex;
     padding: 0px 0;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     background-color: #13141F;
     width: 100%;
-    gap: 55.08px;
+    gap: 49.85px;
     height: 32px;
 font-family: BT Beau Sans;
 font-weight: 500;
@@ -49,14 +50,14 @@ color: #fff;
 /*justify-content: right;*/
 }
 
-.cell-icon {
+.cellIcon {
     display: flex;
     align-items: center;
     justify-content: left;
     height: 100%;
 }
 
-.cell-icon {
+.cellIcon {
     margin-left: 20px;
     margin-right: 0;
     width: 16px;
@@ -66,7 +67,7 @@ color: #fff;
 .cella {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     width: 64px;
     height: 100%;
 }
@@ -82,13 +83,11 @@ color: #fff;
 }
 
 .cellt {
-    width: 100px;
+    width: 80px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 4px;
-
 }
 
 .cells {
@@ -97,10 +96,25 @@ color: #fff;
     justify-content: right;
     width: 64px;
     height: 100%;
-    width: 148px;
+    width: 100px;
     height: 100%;
 }
 
+.cellp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 100%;
+}
+
+.cellq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    height: 100%;
+}
 .green {
   color: rgba(23, 198, 83, 1);
 }
@@ -111,10 +125,10 @@ color: #fff;
 
 .padding {
     width: 100%;
-    height: 209px;
+    height: 469px;
 }
 
-.table-row-two:nth-of-type(even) {
+.tableRowTwo:nth-of-type(even) {
   background-color: rgba(255, 255, 255, 0.05); 
 }
 
