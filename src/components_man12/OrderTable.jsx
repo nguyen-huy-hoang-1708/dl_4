@@ -2,6 +2,8 @@ import React from 'react';
 import style from '../style_man12/OrderTable.module.scss';
 import Nocheckbox from '../assets/Nocheckbox.svg';
 import Kinhlup from '../assets/Kinhlup.svg';
+import Gavel from '../assets/Gavel.svg';
+import XCircle from '../assets/XCircle.svg';
 
 const data = [
   { stt: 1, stock: 'VN30FAU2', im: 17, long: 18, short: 17, net: 1, wapb: '1,195.8', wasp: '1,191.3', market: '1,140.5', deposit: '19,388,500', profit: '-13,150,000', ĐH: '28/12/2029'},
@@ -55,8 +57,14 @@ export default function PositionTable() {
           <div className={style.cell}>{item.profit}</div>
           <div className={style.cellp}>{item.ĐH}</div>
           <div className={style.cellq}>
-            <span className={style.blue}>Đặt lệnh</span>
-            <span className={style.red}>Đóng vị thế</span>
+            <div className={style.blue}>
+                <img src={Gavel} alt="Gavel" className={style.Gavel} />
+                Đặt lệnh
+            </div>
+            <div className={style.red}>
+                <img src={XCircle} alt="XCircle" className={style.XCircle} />
+                Đóng vị thế
+            </div>
           </div>
         </div>
       ))}

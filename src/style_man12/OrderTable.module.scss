@@ -104,24 +104,29 @@ color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 160px;
+    width: 132px;
     height: 100%;
 }
 
 .cellq {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    justify-content:  center;
     width: 172px;
     height: 100%;
+    gap: 16px;
 }
+
+.Gavel, .XCircle {
+  width: 16px;
+  height: 16px;
+}
+
 .green {
   color: rgba(23, 198, 83, 1);
 }
 
-.red {
-  color: rgba(248, 40, 90, 1);
-}
 
 .padding {
     width: 100%;
@@ -131,11 +136,25 @@ color: #fff;
 .tableRowTwo:nth-of-type(even) {
   background-color: rgba(255, 255, 255, 0.05); 
 }
+ 
+.blue, .red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
 
+.blue {
+  color: #1B84FF;
+}
+
+.red {
+  color: #F8285A;
+}
 
 /*Responsive*/
 @media (max-width: 1679px) {
-  .position-table {
+  .positionTable {
     height: 1000px !important;
     width: 100%;
     grid-template-columns: minmax(120px, 1fr) repeat(auto-fit, minmax(120px, 1fr));
@@ -143,20 +162,25 @@ color: #fff;
   }
   
 
-  .table-row-one,
-  .table-row-two {
-    height: 30px;
-    flex-direction: row !important;
-        justify-content: space-between;
+  .tableRowOne,
+  .tableRowTwo {
+    height: auto;
+    flex-direction: column !important;
+    justify-content: space-between;
     gap: 24px;
   }
 
   .cell,
   .cella,
   .cellt,
-  .cells {
-    justify-content: space-between;
+  .cells, .cellp, .cellq, .cellIcon {
+    justify-content: center;
     padding: 4px 0;
+  }
+  .cellq {
+    width: 100px !important;
+    display: flex;
+    flex-wrap: wrap; 
   }
 }
 
@@ -164,20 +188,21 @@ color: #fff;
   display: none;
 }
 
-.table-row-two:nth-of-type() {
+.tableRowTwo:nth-of-type() {
   background-color: rgba(255, 255, 255, 0.05); 
 }
 
 
 @media (max-width: 768px) {
-  .position-table {
+  .positionTable {
     width: 100% !important;
     height: 2000px !important;
     padding: 0 2px;
   }
 
-  .table-row-one,
-  .table-row-two {
+  .tableRowOne,
+  .tableRowTwo {
+    height: auto;
     flex-direction: column;
     gap: 8px;
   }
@@ -185,8 +210,9 @@ color: #fff;
   .cell,
   .cella,
   .cellt,
-  .cells {
-    justify-content: space-between;
+  .cells, .cellp, .cellq, .cellIcon {
+    justify-content: center;
+    padding: 4px 0;
   }
 }
 
@@ -199,12 +225,13 @@ color: #fff;
   .cell,
   .cella,
   .cellt,
-  .cells {
-    font-size: 11px;
+  .cells, .cellp, .cellq, .cellIcon {
+    justify-content: center;
+    padding: 4px 0;
   }
 
-  .table-row-one,
-  .table-row-two {
+  .tablRowOne,
+  .tableRowTwo {
     gap: 6px;
   }
 }
@@ -212,4 +239,3 @@ color: #fff;
 .Kinhlup {
   display: none;
 }
-

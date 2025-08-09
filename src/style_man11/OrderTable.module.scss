@@ -131,17 +131,19 @@ color: #fff;
 
   .tableRowOne,
   .tableRowTwo {
-    height: 30px;
-    flex-direction: row !important;
-        justify-content: space-between;
+    height: auto;
+    flex-direction: column !important;
     gap: 24px;
   }
+
 
   .cell,
   .cella,
   .cellt,
-  .cells {
-    justify-content: space-between;
+  .cells,
+  .cellIcon {
+    width: 20%;
+    justify-content: center;
     padding: 4px 0;
   }
 }
@@ -164,6 +166,7 @@ color: #fff;
 
   .tableRowOne,
   .tableRowTwo {
+    height: auto;
     flex-direction: column;
     gap: 8px;
   }
@@ -171,8 +174,11 @@ color: #fff;
   .cell,
   .cella,
   .cellt,
-  .cells {
-    justify-content: space-between;
+  .cells,
+  .cellIcon {
+    width: 20%;
+    justify-content: center;
+    padding: 4px 0;
   }
 }
 
@@ -185,12 +191,16 @@ color: #fff;
   .cell,
   .cella,
   .cellt,
-  .cells {
-    font-size: 11px;
+  .cells,
+  .cellIcon {
+    width: 20%;
+    justify-content: center;
+    padding: 4px 0;
   }
 
   .tableRowOne,
   .tableRowTwo {
+    height: auto;
     gap: 6px;
   }
 }
