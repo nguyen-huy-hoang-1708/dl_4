@@ -109,17 +109,17 @@ letter-spacing: 0%;
 .btnOutline {
     width: 160px;
     height: 44px;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #cfd6e4;
+  background: rgba(97, 66, 254, 0.3); 
+  border: 2px solid #6142FE;
+  color: #ffffff;
 }
 
 .btnPrimary {
     width: 160px;
     height: 44px;
-  background: linear-gradient(180deg, #6346ff 0%, #7c3aed 100%);
-  border: 0;
-  color: #fff;
+  background: #6142FE;
+  color: #ffffff;
+  border: 0px;
 }
 
 /* responsive */

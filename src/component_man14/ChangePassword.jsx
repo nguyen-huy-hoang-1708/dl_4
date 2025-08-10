@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import style from '../style_man14/ChangePassword.module.scss';
 import Eye from '../assets/Eye.svg';
+import checkIcon from '../assets/CheckCircle.svg';
 
 export default function ChangePassword({activeTab, setActiveTab}) {
 
@@ -72,13 +73,13 @@ export default function ChangePassword({activeTab, setActiveTab}) {
           </button>
         </div>
 
-        {/* Checklist */}
-        <ul className={style.rules}>
-          <li>Không trùng với 3 mật khẩu gần nhất.</li>
-          <li>Bao gồm từ 6 - 32 ký tự.</li>
-          <li>Có chứa ký tự chữ hoa và chữ thường.</li>
-          <li>Có chứa ký tự số.</li>
-          <li>Có ký tự đặc biệt.</li>
+       {/* Checklist */}
+        <ul className={style.checklist}>
+          <li><img src={checkIcon} alt="" /> Không trùng với 3 mật khẩu gần nhất.</li>
+          <li><img src={checkIcon} alt="" /> Bao gồm từ 6 - 32 ký tự.</li>
+          <li><img src={checkIcon} alt="" /> Có chứa ký tự chữ hoa và chữ thường.</li>
+          <li><img src={checkIcon} alt="" /> Có chứa ký tự số.</li>
+          <li><img src={checkIcon} alt="" /> Có ký tự đặc biệt.</li>
         </ul>
 
         {/* Xác nhận mật khẩu mới */}
@@ -95,13 +96,13 @@ export default function ChangePassword({activeTab, setActiveTab}) {
             onClick={() => setShow3(v => !v)}
             aria-label="toggle password"
           >
-            {Eye ? <img src={Eye} alt="" /> : '👁'}
+            <img src={Eye} alt="Eye" className={style.Eye} />
           </button>
         </div>
 
         {/* Actions */}
         <div className={style.actions}>
-          <button type="button" className={`${style.btn} ${style.btnGhost}`}>Hủy</button>
+          <button type="button" className={`${style.btn} ${style.btnOutline}`}>Hủy</button>
           <button type="button" className={`${style.btn} ${style.btnPrimary}`}>Đổi mật khẩu</button>
         </div>
       </section>
