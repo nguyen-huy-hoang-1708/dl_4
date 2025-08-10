@@ -1,0 +1,117 @@
+.footer {
+    width: 1920px;
+    height: 40px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #13141F;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.statusLabel {
+  opacity: 0.8;
+  font-family: BT Beau Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #78829D;
+  margin-left: 12px;
+}
+
+.statusIcon {
+  font-size: 13px;
+  color: #78829D;
+}
+
+.statusValue {
+  color: #17C653;
+  font-family: BT Beau Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.footerRight {
+  color:#F6B100;
+  font-weight: 500;
+  font-family: Lexend;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-right: 12px;
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 1600px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footerLeft {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .statusLabel,
+  .statusValue,
+  .footerRight {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .User {
+    width: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footerLeft {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .statusLabel,
+  .statusValue,
+  .footerRight {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .User {
+    width: 20px;
+    height: auto;
+  }
+}

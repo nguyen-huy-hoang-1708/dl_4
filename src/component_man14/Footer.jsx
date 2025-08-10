@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../style_man13/Footer.module.scss';
+import style from '../style_man14/Footer.module.scss';
 import User from '../assets/User.svg'; 
 
 export default function Footer() {

@@ -1,42 +1,37 @@
 import React, { useState } from 'react';
-import styles from '../style_man13/AccountInfoScreen.module.scss';
+import style from '../style_man13/AccountInfoScreen.module.scss';
 
-/**
- * Props:
- * - onGoChangePassword?: () => void  // click "Đổi mật khẩu" để App điều hướng sang màn 14
- */
-export default function AccountInfoScreen() {
-  const [tab, setTab] = useState('info'); // info | password
+export default function AccountInfoScreen({activeTab, setActiveTab}) {
+
+  //const [activeTab, setActiveTab] = useState(0);          // 0: màn 13, 1: màn 14
 
   return (
-    <div className={styles.screen}>
-      <div className={styles.wrapper}>
+    <div className={style.screen}>
+      <div className={style.wrapper}>
         {/* Tabs */}
-        <div className={styles.tabs}>
+        <div className={style.tabs}>
           <div
-            className={`${styles.info} ${tab === 'info' ? styles.active : ''}`}
-            onClick={() => setTab('info')}
+            className={`${style.info} ${activeTab === 0 ? style.active : ''}`}
+            onClick={() => setActiveTab(0)}
           >
             Thông tin chung
           </div>
           <div
-            className={`${styles.password} ${tab === 'password' ? styles.active : ''}`}
-            onClick={() => {
-              setTab('password');
-            }}
+            className={`${style.password} ${activeTab === 1 ? style.active : ''}`}
+            onClick={() =>  setActiveTab(1) }
           >
             Đổi mật khẩu
           </div>
         </div>
 
         {/* Mô tả */}
-        <div className={styles.desc}>
+        <div className={style.desc}>
           Các thông tin liên lạc được sử dụng để gửi thư, chuyển phát hay gọi điện/fax liên lạc mỗi khi cần.
         </div>
 
         {/* Card */}
-        <section className={styles.card}>
-          <div className={styles.grid}>
+        <section className={style.card}>
+          <div className={style.grid}>
             <Field label="Tài khoản" value="123456789" />
             <Field label="Tên khách hàng" value="Lê Thị Cấm" />
             <Field label="Số CCCD/Hộ chiếu" value="001036895923" />
@@ -51,9 +46,9 @@ export default function AccountInfoScreen() {
             <Field label="Nhân viên môi giới" value="Phạm Đức Dũng" />
           </div>
 
-          <div className={styles.actions}>
-            <button type="button" className={`${styles.btn} ${styles.btnOutline}`}>Hủy</button>
-            <button type="button" className={`${styles.btn} ${styles.btnPrimary}`}>Cập nhật</button>
+          <div className={style.actions}>
+            <button type="button" className={`${style.btn} ${style.btnOutline}`}>Hủy</button>
+            <button type="button" className={`${style.btn} ${style.btnPrimary}`}>Cập nhật</button>
           </div>
         </section>
       </div>
@@ -63,9 +58,9 @@ export default function AccountInfoScreen() {
 
 function Field({ label, value }) {
   return (
-    <div className={styles.field}>
-      <div className={styles.label}>{label}</div>
-      <div className={styles.value}>{value}</div>
+    <div className={style.field}>
+      <div className={style.label}>{label}</div>
+      <div className={style.value}>{value}</div>
     </div>
   );
 }

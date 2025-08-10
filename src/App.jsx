@@ -35,7 +35,7 @@ function App() {
 
 console.log('Render App:', { activeTab, activePage });
 
-  
+ 
   
   // --- Màn 13: Thông tin tài khoản ---
   if (activePage === 'account' && activeTab===0) {
@@ -48,7 +48,9 @@ console.log('Render App:', { activeTab, activePage });
           />
         </header>
 
-        <AccountInfoScreen /> {/* render màn 13 */}
+          <section className="tabss">
+            <AccountInfoScreen activeTab={activeTab} setActiveTab={setActiveTab} /> 
+          </section>
 
         <section className="footer13">
           <Footer13 />
@@ -69,7 +71,9 @@ console.log('Render App:', { activeTab, activePage });
           />
         </header>
 
-        <Pagination /> {/* render màn 14 */}
+          <section className="tabss">
+            <ChangePassword activeTab={activeTab} setActiveTab={setActiveTab} /> 
+          </section>
 
         <section className="footer14">
           <Footer14 />
