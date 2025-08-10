@@ -5,8 +5,8 @@ import styles from '../style_man13/AccountInfoScreen.module.scss';
  * Props:
  * - onGoChangePassword?: () => void  // click "Đổi mật khẩu" để App điều hướng sang màn 14
  */
-export default function AccountInfoScreen({ onGoChangePassword }) {
-  const [activeTab, setActiveTab] = useState('info'); // info | password
+export default function AccountInfoScreen() {
+  const [tab, setTab] = useState('info'); // info | password
 
   return (
     <div className={styles.screen}>
@@ -14,16 +14,15 @@ export default function AccountInfoScreen({ onGoChangePassword }) {
         {/* Tabs */}
         <div className={styles.tabs}>
           <div
-            className={`${styles.info} ${activeTab === 'info' ? styles.active : ''}`}
-            onClick={() => setActiveTab('info')}
+            className={`${styles.info} ${tab === 'info' ? styles.active : ''}`}
+            onClick={() => setTab('info')}
           >
             Thông tin chung
           </div>
           <div
-            className={`${styles.password} ${activeTab === 'password' ? styles.active : ''}`}
+            className={`${styles.password} ${tab === 'password' ? styles.active : ''}`}
             onClick={() => {
-              setActiveTab('password');
-              if (onGoChangePassword) onGoChangePassword();
+              setTab('password');
             }}
           >
             Đổi mật khẩu

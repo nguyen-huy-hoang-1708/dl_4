@@ -6,14 +6,12 @@ import Flag from '../assets/Flag.svg';
 import Option from '../assets/Option.svg';
 import SignOut from '../assets/SignOut.svg';
 
-export default function TopNavbar({ headerTab, setHeaderTab, activePage, setActivePage }) {
-  const goPortfolio = () => { 
-    setHeaderTab(0); 
-    setActivePage('portfolio'); 
+export default function TopNavbar({ activePage, setActivePage }) {
+  const goCategory = () => { 
+    setActivePage('category'); 
   };
 
   const goAccount = () => { 
-    setHeaderTab(1); 
     setActivePage('account'); 
   };
 
@@ -31,8 +29,8 @@ export default function TopNavbar({ headerTab, setHeaderTab, activePage, setActi
 
           {/* Danh mục tài sản */}
           <div
-            className={`${headerTab === 0 ? style.gradients : ''}`}
-            onClick={goPortfolio}
+            className={style.gradients}
+            onClick={goCategory}
             style={{ cursor: 'pointer' }}
           >
             Danh mục tài sản
@@ -40,7 +38,7 @@ export default function TopNavbar({ headerTab, setHeaderTab, activePage, setActi
 
           {/* Thông tin tài khoản */}
           <div
-            className={`${headerTab === 1 ? style.gradients : ''}`}
+            className={style.Nogradients}
             onClick={goAccount}
             style={{ cursor: 'pointer' }}
           >

@@ -21,21 +21,28 @@ import Footer12 from './components_man12/Footer.jsx';
 import TopNavbar13 from './components_man13/TopNavbar.jsx';
 import AccountInfoScreen from './components_man13/AccountInfoScreen.jsx'; 
 import Footer13 from './components_man13/Footer.jsx';
+
+//man14
+import TopNavbar14 from './component_man14/TopNavbar.jsx';
+import Footer14 from './component_man14/Footer.jsx';
+import ChangePassword from './component_man14/ChangePassword.jsx';
+
 import './index.scss';
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);          // 0: màn 11, 1: màn 12
-  const [headerTab, setHeaderTab] = useState(0);          // 0: DMTS, 1: TTTK (header)
-  const [activePage, setActivePage] = useState('category'); // 'portfolio' | 'account'
+  const [activePage, setActivePage] = useState('category'); // set ban đầu trang web là ở tab Danh mục tài sản
 
+console.log('Render App:', { activeTab, activePage });
+
+  
+  
   // --- Màn 13: Thông tin tài khoản ---
-  if (activePage === 'account') {
+  if (activePage === 'account' && activeTab===0) {
     return (
       <div className="app-container">
         <header>
           <TopNavbar13
-            headerTab={headerTab}
-            setHeaderTab={setHeaderTab}
             activePage={activePage}
             setActivePage={setActivePage}
           />
@@ -50,14 +57,34 @@ function App() {
     );
   }
 
-  // --- Trang portfolio: điều khiển bằng activeTab ---
+  //activePage===account && activeTab===1
+  // Màn 14: Đổi mật khẩu
+  if (activePage === 'account' && activeTab===1) {
+    return (
+      <div className="app-container">
+        <header>
+          <TopNavbar14
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
+        </header>
+
+        <Pagination /> {/* render màn 14 */}
+
+        <section className="footer14">
+          <Footer14 />
+        </section>
+      </div>
+    );
+  }
+
+  // --- activeTab === 0 (màn 11) ---
+  // --- Trang info: điều khiển bằng activeTab ---
   if (activePage==='category' && activeTab === 0) {
     return (
       <div className="app-container">
         <header>
           <TopNavbar
-            headerTab={headerTab}
-            setHeaderTab={setHeaderTab}
             activePage={activePage}
             setActivePage={setActivePage}
           />
@@ -88,8 +115,6 @@ function App() {
     <div className="app-container-12">
       <header>
         <TopNavbar12
-          headerTab={headerTab}
-          setHeaderTab={setHeaderTab}
           activePage={activePage}
           setActivePage={setActivePage}
         />
