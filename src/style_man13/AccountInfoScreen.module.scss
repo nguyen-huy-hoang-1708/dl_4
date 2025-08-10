@@ -1,0 +1,154 @@
+
+.screen {
+    display: flex;
+    width: 1920px;
+    height: 624px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 82px;
+    margin-bottom: 290px;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 624px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 624px;
+  height: 44px;
+  gap: 0px;
+  justify-content: flex-start;
+  margin-top: 0px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 144px;
+  height: 44px;
+  cursor: pointer;
+  color: #6142FE !important;
+  background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1)) !important;
+ border-bottom: 2px solid rgba(97, 66, 254, 1);
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 123px;
+  height: 44px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+  background: linear-gradient(180deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+
+.desc {
+  color: #9aa3b2;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  size: 14px;
+font-weight: 400;
+font-style: Regular;
+line-height: 20px;
+letter-spacing: 0%;
+}
+
+.card {
+  background: #171823;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  padding: 16px;
+  gap: 24px;
+}
+
+.field {}
+
+.label {
+  color: #9aa3b2;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.value {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 0px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btnOutline {
+    width: 160px;
+    height: 44px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #cfd6e4;
+}
+
+.btnPrimary {
+    width: 160px;
+    height: 44px;
+  background: linear-gradient(180deg, #6346ff 0%, #7c3aed 100%);
+  border: 0;
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 1600px) {
+  .screen {
+    width: 100%;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+    .screen {
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 12px;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: auto;
+    }
+
+  .field {
+    flex-direction: row;   /* label & value cùng hàng */
+    align-items: center;
+    gap: 8px;
+    flex: 1 1 100%;
+  }
+}

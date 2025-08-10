@@ -1,6 +1,6 @@
 // components_man12/TopNavbar.jsx
 import React from 'react';
-import style from '../style_man12/TopNavbar.module.scss';
+import style from '../style_man13/TopNavbar.module.scss';
 import logo from '../assets/Logo.svg';
 import Flag from '../assets/Flag.svg';
 import Option from '../assets/Option.svg';
@@ -9,7 +9,7 @@ import SignOut from '../assets/SignOut.svg';
 export default function TopNavbar({ headerTab, setHeaderTab, activePage, setActivePage }) {
   const goPortfolio = () => { 
     setHeaderTab(0); 
-    setActivePage('portfolio'); 
+    setActivePage('category'); 
   };
 
   const goAccount = () => { 

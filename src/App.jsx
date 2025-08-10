@@ -20,12 +20,13 @@ import Footer12 from './components_man12/Footer.jsx';
 //man13
 import TopNavbar13 from './components_man13/TopNavbar.jsx';
 import AccountInfoScreen from './components_man13/AccountInfoScreen.jsx'; 
+import Footer13 from './components_man13/Footer.jsx';
 import './index.scss';
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);          // 0: màn 11, 1: màn 12
-  const [headerTab, setHeaderTab] = useState(0);          // 0: DMTS, 1: TTTK (highlight header)
-  const [activePage, setActivePage] = useState('portfolio'); // 'portfolio' | 'account'
+  const [headerTab, setHeaderTab] = useState(0);          // 0: DMTS, 1: TTTK (header)
+  const [activePage, setActivePage] = useState('category'); // 'portfolio' | 'account'
 
   // --- Màn 13: Thông tin tài khoản ---
   if (activePage === 'account') {
@@ -42,15 +43,15 @@ function App() {
 
         <AccountInfoScreen /> {/* render màn 13 */}
 
-        <section className="footer">
-          <Footer12 />
+        <section className="footer13">
+          <Footer13 />
         </section>
       </div>
     );
   }
 
   // --- Trang portfolio: điều khiển bằng activeTab ---
-  if (activeTab === 0) {
+  if (activePage==='category' && activeTab === 0) {
     return (
       <div className="app-container">
         <header>
@@ -82,6 +83,7 @@ function App() {
   }
 
   // --- activeTab === 1 (màn 12) ---
+  //if (activePage==='category' && activeTab === 1) {
   return (
     <div className="app-container-12">
       <header>
@@ -102,7 +104,7 @@ function App() {
         <section className="pagination"><Pagination12 /></section>
       </main>
 
-      <section className="footer"><Footer12 /></section>
+      <section className="footer12"><Footer12 /></section>
     </div>
   );
 }

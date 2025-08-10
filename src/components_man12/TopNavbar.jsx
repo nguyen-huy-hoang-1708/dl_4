@@ -9,7 +9,7 @@ import SignOut from '../assets/SignOut.svg';
 export default function TopNavbar({ headerTab, setHeaderTab, activePage, setActivePage }) {
   const goPortfolio = () => { 
     setHeaderTab(0); 
-    setActivePage('portfolio'); 
+    setActivePage('category'); 
   };
 
   const goAccount = () => { 

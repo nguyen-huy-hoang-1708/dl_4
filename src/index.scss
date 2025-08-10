@@ -3,6 +3,12 @@ body {
   margin: 0;
   background: black;
   height: 1080px;
+  font-family: BT Beau Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
 }
 
 
@@ -52,6 +58,14 @@ background: black ;
  .footer {
   margin-top: 12px;
  }
+
+.footer12,
+.footer13 {
+  margin: 0;          /* xóa mọi margin tự áp */
+  padding: 0;         /* tránh cộng dồn */
+  display: flow-root; /* chặn margin-collapsing từ con */
+}
+
 
 
 
