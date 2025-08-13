@@ -179,30 +179,23 @@ background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
   }
 
   .menuTabss {
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
     padding: 8px 0;
-    height: auto;
+    height: 100%;
     width: auto;
   }
 
-   .ten, .Flag {
-    padding: 6px 10px;
-    min-height: 32px;
+  .hi, .ten, .Flag, .Out {
+    display: none;
   }
 
-  .hi, .Out {
-    display:none;
-  }
 
   .logo {
     margin-top: 12px;
     object-fit: contain;
     margin-bottom: 8px;
-  }
-  .menuTabss {
-    display: none;
   }
 }
 
@@ -222,8 +215,8 @@ background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
   }
 
   .menuTabss {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+    display: flex;
+    flex-direction: row;
     gap: 12px;
     padding: 8px 0;
     height: auto;
@@ -231,9 +224,8 @@ background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
     width: auto;
   }
 
-  .ten, .Flag {
-    height: auto;
-    width: auto;
+  .hi, .ten, .Flag {
+    display: none;
   }
 
   .logo {
@@ -241,7 +233,5 @@ background: linear-gradient(to top, rgba(97, 66, 254, 0), rgba(97, 66, 254, 1));
     align-items: center;
     text-align: center;
   }
-  .menuTabss {
-    display: none;
-  }
+
 }

@@ -6,7 +6,6 @@ import checkIcon from '../assets/CheckCircle.svg';
 export default function ChangePassword({activeTab, setActiveTab}) {
 
   const [show1, setShow1] = useState(false);
-  const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
 
   //const [activeTab, setActiveTab] = useState(0);          // 0: màn 13, 1: màn 14
@@ -35,11 +34,12 @@ export default function ChangePassword({activeTab, setActiveTab}) {
         Phương thức xác thực nhanh bằng vân tay/khuôn mặt sẽ bị vô hiệu hoá sau khi đổi mật khẩu.
         Quý khách vui lòng thiết lập lại trên ứng dụng.     
         </div>
-        <section className={style.card}>
+        <div className={style.card}>
         {/* Mật khẩu hiện tại */}
-        <label className={style.label}>Mật khẩu hiện tại</label>
-        <div className={style.inputWrap}>
-          <input
+        <div className={style.divOne}>
+            <div className={style.span}>Mật khẩu hiện tại</div>
+          <div className={style.inputWrap}>
+          <input className={style.holder}
             type={show1 ? 'text' : 'password'}
             placeholder="Nhập..."
             className={style.input}
@@ -48,44 +48,45 @@ export default function ChangePassword({activeTab, setActiveTab}) {
             type="button"
             className={style.eyeBtn}
             onClick={() => setShow1(v => !v)}
-            aria-label="toggle password"
           >
-            {Eye ? <img src={Eye} alt="" /> : '👁'}
+            <img src={Eye} alt="" />
           </button>
+          </div>
+          <div className={style.forgot}><a href="#!">Quên mật khẩu?</a></div>
         </div>
-        <div className={style.forgot}><a href="#!">Quên mật khẩu?</a></div>
-
         {/* Mật khẩu mới */}
-        <label className={style.label}>Mật khẩu mới</label>
-        <div className={style.inputWrap}>
-          <input
-            type={show2 ? 'text' : 'password'}
+        <div className={style.divTwo}>
+            <div className={style.span}>Mật khẩu mới</div>
+          <div className={style.inputWrap}>
+          <input className={style.holder}
+            type={show1 ? 'text' : 'password'}
             placeholder="Nhập..."
             className={style.input}
           />
           <button
             type="button"
             className={style.eyeBtn}
-            onClick={() => setShow2(v => !v)}
-            aria-label="toggle password"
+            onClick={() => setShow1(v => !v)}
           >
-            {Eye ? <img src={Eye} alt="" /> : '👁'}
+            <img src={Eye} alt="" />
           </button>
+          </div>
         </div>
 
        {/* Checklist */}
-        <ul className={style.checklist}>
-          <li><img src={checkIcon} alt="" /> Không trùng với 3 mật khẩu gần nhất.</li>
-          <li><img src={checkIcon} alt="" /> Bao gồm từ 6 - 32 ký tự.</li>
-          <li><img src={checkIcon} alt="" /> Có chứa ký tự chữ hoa và chữ thường.</li>
-          <li><img src={checkIcon} alt="" /> Có chứa ký tự số.</li>
-          <li><img src={checkIcon} alt="" /> Có ký tự đặc biệt.</li>
-        </ul>
+        <div className={style.checklist}>
+          <div className={style.note}><img src={checkIcon}  alt="" className={style.checkIcon} /> Không trùng với 3 mật khẩu gần nhất.</div>
+          <div className={style.note}><img src={checkIcon}  alt="" className={style.checkIcon} /> Bao gồm từ 6 - 32 ký tự.</div>
+          <div className={style.note}><img src={checkIcon}  alt="" className={style.checkIcon} /> Có chứa ký tự chữ hoa và chữ thường.</div>
+          <div className={style.note}><img src={checkIcon}  alt="" className={style.checkIcon} /> Có chứa ký tự số.</div>
+          <div className={style.note}><img src={checkIcon}  alt="" className={style.checkIcon} /> Có ký tự đặc biệt.</div>
+        </div>
 
         {/* Xác nhận mật khẩu mới */}
-        <label className={style.label}>Xác nhận mật khẩu mới</label>
-        <div className={style.inputWrap}>
-          <input
+        <div className={style.divThree}>
+            <div className={style.span}>Xác nhận mật khẩu mới</div>
+          <div className={style.inputWrap}>
+          <input className={style.holder}
             type={show3 ? 'text' : 'password'}
             placeholder="Nhập..."
             className={style.input}
@@ -94,28 +95,19 @@ export default function ChangePassword({activeTab, setActiveTab}) {
             type="button"
             className={style.eyeBtn}
             onClick={() => setShow3(v => !v)}
-            aria-label="toggle password"
           >
             <img src={Eye} alt="Eye" className={style.Eye} />
           </button>
+          </div>
         </div>
-
-        {/* Actions */}
-        <div className={style.actions}>
+      </div>
+      <div className={style.actions}>
           <button type="button" className={`${style.btn} ${style.btnOutline}`}>Hủy</button>
           <button type="button" className={`${style.btn} ${style.btnPrimary}`}>Đổi mật khẩu</button>
         </div>
-      </section>
       </div>
     </div>
   );
 }
 
-function Field({ label, value }) {
-  return (
-    <div className={style.field}>
-      <div className={style.label}>{label}</div>
-      <div className={style.value}>{value}</div>
-    </div>
-  );
-}
+

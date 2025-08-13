@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'BT Beau Sans';
+  src:  url('./assets/fonts/BT-BeauSans-Light.ttf') format('woff2');
+  font-family: BT Beau Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
 
 body {
   margin: 0;
@@ -18,6 +30,7 @@ letter-spacing: 0%;
   background: rgba(19, 20, 31, 1);
   height: auto;
   width: 1896px;
+  flex: 1;
 }
 
 
@@ -65,9 +78,6 @@ background: black ;
   padding: 0;         /* tránh cộng dồn */
   display: flow-root; /* chặn margin-collapsing từ con */
 }
-
-
-
 
 
  /* Responsive bảng và layout chính */

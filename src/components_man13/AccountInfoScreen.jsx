@@ -45,12 +45,11 @@ export default function AccountInfoScreen({activeTab, setActiveTab}) {
             <Field label="Chi nhánh" value="Hà Đông" />
             <Field label="Nhân viên môi giới" value="Phạm Đức Dũng" />
           </div>
-
-          <div className={style.actions}>
+        </section>
+        <div className={style.actions}>
             <button type="button" className={`${style.btn} ${style.btnOutline}`}>Hủy</button>
             <button type="button" className={`${style.btn} ${style.btnPrimary}`}>Cập nhật</button>
           </div>
-        </section>
       </div>
     </div>
   );
